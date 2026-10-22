@@ -1,0 +1,51 @@
+name: habit_track
+description: "HabitTrack: aplicación minimalista de seguimiento de hábitos."
+publish_to: 'none' # Evita la publicación accidental del paquete en pub.dev.
+
+version: 1.0.0+1
+
+environment:
+  sdk: ^3.13.5
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+  # Gráficos de barras para la pantalla de estadísticas.
+  fl_chart: ^1.3.0
+
+  # Utilidades de rutas de archivos, necesarias para ubicar la base de datos.
+  path: ^1.9.0
+
+  # Gestión de estado sencilla y ligera (InheritedWidget + ChangeNotifier).
+  provider: ^6.1.2
+
+  # Almacenamiento local persistente (SQLite) para hábitos e historial.
+  sqflite: ^2.4.1
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+
+  # Conjunto de lints recomendados por el equipo de Flutter.
+  flutter_lints: ^6.0.0
+
+  # Genera los iconos de la app (Android e iOS) desde una única imagen.
+  flutter_launcher_icons: ^0.14.4
+
+# Configuración de flutter_launcher_icons:
+#   dart run flutter_launcher_icons
+#
+# - `remove_alpha_ios`: App Store no admite canal alfa en el icono.
+# - `adaptive_icon_background`: color del fondo del icono adaptativo de
+#   Android (#C3E7F5, tomado del propio icono) visible tras la máscara.
+flutter_launcher_icons:
+  android: true
+  ios: true
+  image_path: "assets/icon/app_icon.png"
+  remove_alpha_ios: true
+  adaptive_icon_background: "#C3E7F5"
+  adaptive_icon_foreground: "assets/icon/app_icon.png"
+
+flutter:
+  uses-material-design: true

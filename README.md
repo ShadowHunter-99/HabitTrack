@@ -26,4 +26,4 @@
 
 ¡Prueba la app directamente en tu dispositivo Android!
 
-[📥 Descargar APK (v1.0.0)](https://github.com/ShadowHunter-99/HabitTrack/releases/download/v1.0.0/app-release.apk)
+[📥 Descargar APK (v1.0.0)](https://github.com/jlamas-dev/HabitTrack/releases/download/v1.0.0/app-release.apk)
